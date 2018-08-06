@@ -1,0 +1,21 @@
+controller_list:
+  - name: hydra_placer_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+      - placer_shoulder_pan_joint
+      - placer_shoulder_lift_joint
+      - placer_elbow_joint
+      - placer_wrist_1_joint
+      - placer_wrist_2_joint
+      - placer_wrist_3_joint
+  - name: hydra_attacher_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+      - attacher_shoulder_pan_joint
+      - attacher_shoulder_lift_joint
+      - attacher_elbow_joint
+      - attacher_wrist_1_joint
+      - attacher_wrist_2_joint
+      - attacher_wrist_3_joint
